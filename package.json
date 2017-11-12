@@ -1,0 +1,19 @@
+{
+  "name": "karma-static",
+  "description": "Serve a directory of static files on the Karma server.",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel '*.mjs' --out-dir .",
+    "watch": "babel '*.mjs' --watch --extensions .mjs --out-dir .",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "serve-static": "^1.13.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "jacksonrayhamilton/babel-plugin-transform-es2015-modules-commonjs#b0b9a88"
+  }
+}
