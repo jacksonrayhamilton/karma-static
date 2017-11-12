@@ -1,7 +1,7 @@
 {
   "name": "karma-static",
   "description": "Serve a directory of static files on the Karma server.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "build": "babel '*.mjs' --out-dir .",
