@@ -5,7 +5,8 @@
 module.exports = {
   root: true,
   env: {
-    es6: true
+    es6: true,
+    node: true,
   },
   parserOptions: {
     ecmaVersion: 2017,
@@ -93,6 +94,7 @@ module.exports = {
     // Stylistic Issues
 
     'max-statements-per-line': ['error'],
+    'semi': ['error'],
 
     // ECMAScript 6
 

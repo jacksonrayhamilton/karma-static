@@ -1,11 +1,11 @@
-import serveStatic from 'serve-static'
+import serveStatic from 'serve-static';
 
 export default function karmaStatic (config) {
-  var path = config.static.path
+  var path = config.static.path;
   if (!path) {
     return function (req, res, next) {
-      next()
-    }
+      next();
+    };
   }
-  return serveStatic(path)
+  return serveStatic(path);
 }
