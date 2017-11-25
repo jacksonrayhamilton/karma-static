@@ -4,9 +4,8 @@
   "version": "1.0.1",
   "license": "MIT",
   "scripts": {
-    "build": "babel '*.mjs' --out-dir .",
-    "watch": "babel '*.mjs' --watch --extensions .mjs --out-dir .",
-    "prepublish": "npm run build"
+    "prepare": "babel '*.mjs' --out-dir .",
+    "watch": "babel '*.mjs' --watch --extensions .mjs --out-dir ."
   },
   "dependencies": {
     "serve-static": "^1.13.1"
