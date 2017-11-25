@@ -48,6 +48,20 @@ Now files in the `public` directory like `icon.png` will be served by the web
 server, and will no longer throw 404s when requested by components in
 `tests.js`.
 
+## Contributing
+
+To quickly test changes to the plugin in your project, use `npm link` to symlink
+`karma-static` to your project's `node_modules` directory.  e.g.:
+
+```
+cd /my/project/dir
+npm link /path/to/karma-static
+```
+
+Depending on your Node version, you may need to compile the ES modules in
+`karma-static` to CommonJS modules.  To do this automatically while working on
+the `karma-static` code, run `npm run watch` in the background.
+
 ## License
 
 MIT
