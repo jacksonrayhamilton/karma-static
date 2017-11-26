@@ -4,6 +4,7 @@
   "version": "1.0.1",
   "license": "MIT",
   "scripts": {
+    "lint": "eslint --ext .mjs .",
     "prepare": "babel '*.mjs' --out-dir .",
     "watch": "babel '*.mjs' --watch --extensions .mjs --out-dir ."
   },
@@ -13,6 +14,8 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-transform-es2015-modules-commonjs": "jacksonrayhamilton/babel-plugin-transform-es2015-modules-commonjs#b0b9a88"
+    "babel-plugin-transform-es2015-modules-commonjs": "jacksonrayhamilton/babel-plugin-transform-es2015-modules-commonjs#b0b9a88",
+    "eslint": "^4.12.0",
+    "eslint-config-will-robinson": "^1.0.0"
   }
 }
