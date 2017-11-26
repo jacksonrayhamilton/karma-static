@@ -1,3 +1,2 @@
-/index.js
-/middleware.js
+*.js
 /node_modules/
